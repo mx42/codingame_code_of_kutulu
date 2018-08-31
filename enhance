@@ -5,5 +5,5 @@ BASENAME=$(basename $0)
 NAME=${BASENAME##enhance}
 
 echo "Continuously testing and bundling $NAME"
-sbt "~ ; test-only **.${NAME}Test ; runMain $BUNDLER $NAME.scala"
+sbt "~ ; testOnly **.${NAME}Test ; runMain $BUNDLER $NAME.scala"
 
